@@ -1,0 +1,150 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui/qt/render.ui'
+#
+# Created: Fri Jan 02 13:42:39 2015
+#      by: PyQt4 UI code generator 4.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_Render(object):
+    def setupUi(self, Render):
+        Render.setObjectName(_fromUtf8("Render"))
+        Render.resize(847, 382)
+        self.verticalLayout_3 = QtGui.QVBoxLayout(Render)
+        self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
+        self.frame_4 = QtGui.QFrame(Render)
+        self.frame_4.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_4.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_4.setObjectName(_fromUtf8("frame_4"))
+        self.horizontalLayout_3 = QtGui.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_3.setMargin(0)
+        self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
+        self.frame = QtGui.QFrame(self.frame_4)
+        self.frame.setMinimumSize(QtCore.QSize(280, 0))
+        self.frame.setMaximumSize(QtCore.QSize(280, 16777215))
+        self.frame.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame.setObjectName(_fromUtf8("frame"))
+        self.verticalLayout_2 = QtGui.QVBoxLayout(self.frame)
+        self.verticalLayout_2.setMargin(0)
+        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
+        self.groupBox = QtGui.QGroupBox(self.frame)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.formLayout = QtGui.QFormLayout(self.groupBox)
+        self.formLayout.setObjectName(_fromUtf8("formLayout"))
+        self.label = QtGui.QLabel(self.groupBox)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.formLayout.setWidget(0, QtGui.QFormLayout.LabelRole, self.label)
+        self.label_3 = QtGui.QLabel(self.groupBox)
+        self.label_3.setEnabled(True)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.formLayout.setWidget(1, QtGui.QFormLayout.LabelRole, self.label_3)
+        self.file_size = QtGui.QLabel(self.groupBox)
+        self.file_size.setObjectName(_fromUtf8("file_size"))
+        self.formLayout.setWidget(1, QtGui.QFormLayout.FieldRole, self.file_size)
+        self.file_name = QtGui.QLabel(self.groupBox)
+        self.file_name.setObjectName(_fromUtf8("file_name"))
+        self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.file_name)
+        self.label_4 = QtGui.QLabel(self.groupBox)
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.formLayout.setWidget(3, QtGui.QFormLayout.LabelRole, self.label_4)
+        self.label_5 = QtGui.QLabel(self.groupBox)
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.formLayout.setWidget(2, QtGui.QFormLayout.LabelRole, self.label_5)
+        self.file_frames = QtGui.QLabel(self.groupBox)
+        self.file_frames.setObjectName(_fromUtf8("file_frames"))
+        self.formLayout.setWidget(3, QtGui.QFormLayout.FieldRole, self.file_frames)
+        self.file_audio = QtGui.QLabel(self.groupBox)
+        self.file_audio.setObjectName(_fromUtf8("file_audio"))
+        self.formLayout.setWidget(2, QtGui.QFormLayout.FieldRole, self.file_audio)
+        self.verticalLayout_2.addWidget(self.groupBox)
+        self.label_2 = QtGui.QLabel(self.frame)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.verticalLayout_2.addWidget(self.label_2)
+        self.render_list = QtGui.QListWidget(self.frame)
+        self.render_list.setSelectionMode(QtGui.QAbstractItemView.NoSelection)
+        self.render_list.setObjectName(_fromUtf8("render_list"))
+        self.verticalLayout_2.addWidget(self.render_list)
+        self.horizontalLayout_3.addWidget(self.frame)
+        self.line = QtGui.QFrame(self.frame_4)
+        self.line.setFrameShape(QtGui.QFrame.VLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName(_fromUtf8("line"))
+        self.horizontalLayout_3.addWidget(self.line)
+        self.frame_3 = QtGui.QFrame(self.frame_4)
+        self.frame_3.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_3.setObjectName(_fromUtf8("frame_3"))
+        self.verticalLayout = QtGui.QVBoxLayout(self.frame_3)
+        self.verticalLayout.setMargin(0)
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.label_6 = QtGui.QLabel(self.frame_3)
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.verticalLayout.addWidget(self.label_6)
+        self.renderLog = QtGui.QTextEdit(self.frame_3)
+        self.renderLog.setReadOnly(True)
+        self.renderLog.setObjectName(_fromUtf8("renderLog"))
+        self.verticalLayout.addWidget(self.renderLog)
+        self.auto_close = QtGui.QCheckBox(self.frame_3)
+        self.auto_close.setChecked(True)
+        self.auto_close.setObjectName(_fromUtf8("auto_close"))
+        self.verticalLayout.addWidget(self.auto_close)
+        self.horizontalLayout_3.addWidget(self.frame_3)
+        self.verticalLayout_3.addWidget(self.frame_4)
+        self.frame_2 = QtGui.QFrame(Render)
+        self.frame_2.setObjectName(_fromUtf8("frame_2"))
+        self.horizontalLayout = QtGui.QHBoxLayout(self.frame_2)
+        self.horizontalLayout.setMargin(0)
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        self.progressBar = QtGui.QProgressBar(self.frame_2)
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setTextVisible(True)
+        self.progressBar.setObjectName(_fromUtf8("progressBar"))
+        self.horizontalLayout.addWidget(self.progressBar)
+        self.btn_cancel = QtGui.QPushButton(self.frame_2)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btn_cancel.sizePolicy().hasHeightForWidth())
+        self.btn_cancel.setSizePolicy(sizePolicy)
+        self.btn_cancel.setObjectName(_fromUtf8("btn_cancel"))
+        self.horizontalLayout.addWidget(self.btn_cancel)
+        self.verticalLayout_3.addWidget(self.frame_2)
+
+        self.retranslateUi(Render)
+        QtCore.QMetaObject.connectSlotsByName(Render)
+
+    def retranslateUi(self, Render):
+        Render.setWindowTitle(_translate("Render", "renderb0x - Rendering...", None))
+        self.groupBox.setTitle(_translate("Render", "File Info", None))
+        self.label.setText(_translate("Render", "File:", None))
+        self.label_3.setText(_translate("Render", "Size:", None))
+        self.file_size.setText(_translate("Render", "50mb", None))
+        self.file_name.setText(_translate("Render", "a1.mp4", None))
+        self.label_4.setText(_translate("Render", "Frames:", None))
+        self.label_5.setText(_translate("Render", "Audio:", None))
+        self.file_frames.setText(_translate("Render", "370", None))
+        self.file_audio.setText(_translate("Render", "a1_.wav", None))
+        self.label_2.setText(_translate("Render", "List of videos that will be rendered:", None))
+        self.label_6.setText(_translate("Render", "FFMPEG\'s Log:", None))
+        self.auto_close.setText(_translate("Render", "Close this window automaticaly", None))
+        self.btn_cancel.setText(_translate("Render", "Cancel", None))
+
