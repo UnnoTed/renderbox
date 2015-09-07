@@ -20,7 +20,7 @@ you should recognize that from Team Fortress 2
 ![Render Window](https://i.gyazo.com/64edc52ae704406fb029dfbfe4dc5a92.png "Render Window")
 
 ### how to use it?
-1. download it from: [github releases - renderb0x v0.1](https://github.com/sk1LLb0X/renderb0x/releases/download/0.1/renderb0x_0.1.rar)
+1. download it from: [github releases - renderb0x v0.1](https://github.com/sk1LLb0X/renderb0x/releases/download/v0.1/renderb0x_v0.1.rar)
 2. run main.exe
 3. set the input path (folder where sequence files are)
 4. set the output path (folder where movie will be rendered to)
